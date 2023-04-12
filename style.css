@@ -1,8 +1,9 @@
 body {
-    height: 97vh;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
     display:flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .header, .footer{
@@ -188,4 +189,10 @@ img {
 .summary {
     color:rgba(0, 0, 0, 0.6);
     flex:1;
+    padding: 5px 0px;
+}
+
+.actionIcons {
+    filter: sepia(0%) saturate(0%) brightness(60%) contrast(20%);
+    align-self:last baseline;
 }
