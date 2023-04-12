@@ -30,10 +30,6 @@ body {
     grid-template-rows: minmax(50px, 1fr) 4fr;
 }
 
-.search, .greeting {
-    border-style: dotted;
-}
-
 .sidebar {
     grid-row: 1 / 3;
     display: grid;
@@ -70,8 +66,16 @@ img {
     width: 30px;
 }
 
+.topbar {
+    display:flex;
+    flex-direction: column;
+    padding-left: 1vw;
+}
+
 .topbar .search {
+    flex:1;
     display: flex;
+    padding: 1vw;
 }
 
 .search div {
@@ -91,6 +95,59 @@ img {
     flex:1;
 
 }
+
+.topbar .greeting {
+    flex:1;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+.topbar .greeting .avatar {
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: start;
+    align-self: stretch;
+
+    
+}
+
+.topbar .greeting .avatar img {
+    width:clamp(0px,6vw, 60px);
+    height: auto;
+}
+
+.topbar .greeting .hello {
+    font-size: 1.5vw;
+    justify-self: start;
+}
+
+.topbar .greeting .name {
+    font-size: 2vw;
+    justify-self: start;
+}
+
+.topbar .greeting .buttons {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: end;
+    
+}
+
+.button {
+    margin-right: 1vw;
+    color:white;
+    background-color: #0284c7;
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.2vw;
+    width:7vw;
+}
+
 
 .content {
     background-color: lightgrey;
