@@ -30,8 +30,8 @@ body {
     grid-template-rows: minmax(50px, 1fr) 4fr;
 }
 
-.topbar, .content {
-    border-style: dashed;
+.search, .greeting {
+    border-style: dotted;
 }
 
 .sidebar {
@@ -68,4 +68,30 @@ img {
 .title img {
     height: 30px;
     width: 30px;
+}
+
+.topbar .search {
+    display: flex;
+}
+
+.search div {
+    padding: 1vw;
+}
+
+.searchBar {
+    flex:1;
+    display:flex;
+    
+}
+
+.searchBar input[type=text] {
+    background-color: lightgrey;
+    border-style: none;
+    border-radius: 10px;
+    flex:1;
+
+}
+
+.content {
+    background-color: lightgrey;
 }
