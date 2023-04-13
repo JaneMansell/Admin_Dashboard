@@ -237,3 +237,18 @@ img {
     border-top: 2px darkgrey solid;
     border-bottom: 2px darkgrey solid;
 }
+
+.trend {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.trend .avatar {
+    grid-row: 1 / 3;
+}
+
+.trend .avatar img {
+    width:clamp(0px,6vw, 30px);
+    height: auto;
+}
