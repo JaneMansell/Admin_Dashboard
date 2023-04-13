@@ -196,3 +196,44 @@ img {
     filter: sepia(0%) saturate(0%) brightness(60%) contrast(20%);
     align-self:last baseline;
 }
+
+.announcementsContainer, .trendingContainer, .announcements, .announcement {
+    display: flex;
+    flex-direction:column;
+}
+
+.announcements, .trending {
+    background-color: white;
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.announcements .summary {
+    
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+    font-size: 12px;
+    max-height: 36px;
+
+    
+    
+}
+.announcement {
+    padding: 5px;
+    flex: 1;
+    
+}
+
+.announcement .subtitle {
+    font-size: small;
+}
+
+.announcements .community {
+    border-top: 2px darkgrey solid;
+    border-bottom: 2px darkgrey solid;
+}
