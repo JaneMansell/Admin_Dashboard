@@ -149,9 +149,6 @@ img {
     width:7vw;
 }
 
-.projectsContainer, .announcementsContainer, .trendingContainer {
-    border: 5px darkorange dotted
-}
 .content {
     background-color: lightgrey;
     display: grid;
@@ -165,6 +162,10 @@ img {
     display: flex;
     flex-direction: column;
     
+}
+
+.yourProjects {
+    padding-left: 0.5vw;
 }
 
 .projects {
@@ -184,6 +185,7 @@ img {
     border-radius: 10px;
     padding: 5px;
     border-left: 5px orange solid;
+    margin: 1vw 1vw 1vw 0.5vw;
 }
 
 .summary {
@@ -212,7 +214,7 @@ img {
 .announcements .summary {
     
     display: -webkit-box;
-    max-width: 200px;
+    max-width: 150px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -229,7 +231,11 @@ img {
     
 }
 
-.announcement .subtitle {
+.announcements, .trending, .trendingContainer {
+    margin-top: 5px;
+}
+
+.announcement .subtitle, .trend {
     font-size: small;
 }
 
@@ -238,17 +244,27 @@ img {
     border-bottom: 2px darkgrey solid;
 }
 
+.trending {
+    overflow: hidden;
+}
+
 .trend {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: clamp(0px,6.5vw, 40px) auto;
     grid-template-rows: auto auto;
+    padding: 5px;
 }
 
 .trend .avatar {
     grid-row: 1 / 3;
+    padding-right: 5px;
 }
 
 .trend .avatar img {
     width:clamp(0px,6vw, 30px);
     height: auto;
+}
+
+.trend .news {
+    color:rgba(0, 0, 0, 0.6);
 }
